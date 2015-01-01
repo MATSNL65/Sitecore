@@ -8,7 +8,7 @@ Windows, IIS server, Mssql, Mongodb, Visual Studio
 
 ### DOWNLOAD
 * Have a developer license.xml file
-* login and download 'ZIP archive of the Sitecore site root' from dev.sitecore.net
+* login and download 'ZIP archive of the Sitecore site root' from http://dev.sitecore.net
 * Unblock the zip file and extract the content
 
 ### DB
