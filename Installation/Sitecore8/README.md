@@ -42,8 +42,8 @@ Windows, IIS server, Mssql, Mongodb, Visual Studio
 *     Sitecore.Kernell
 * Reference the files dlls and select copy Locals false
 * install from package manager console
-*     `Install-Package Microsoft.AspNet.Razor -Version 3.0.0`
-*     `Install-Package Microsoft.AspNet.Webpages -Version 3.0.0`
+*     `Install-Package Microsoft.AspNet.Razor -Version 3.0.0.0`
+*     `Install-Package Microsoft.AspNet.Webpages -Version 3.0.0.0`
 *     `Install-Package Microsoft.AspNet.Mvc -Version 5.1.0.0`
 * Copy web.config from web deploy folder to solution folder
 * Delete global asax files
