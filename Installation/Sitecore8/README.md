@@ -2,6 +2,7 @@ Sitecore 8 Installation
 ========
 
 ## Manual installation notes
+All steps are manual in this guide, no Sitecore Instance Manager (SIM) or MSI installation
 
 ###  PREREQUISITE
 Windows, IIS server, Mssql, Mongodb, Visual Studio
