@@ -43,11 +43,11 @@ Windows, IIS server, Mssql, Mongodb, Visual Studio
  * `Install-Package Microsoft.AspNet.Webpages -Version 3.0.0.0`
  * `Install-Package Microsoft.AspNet.Mvc -Version 5.1.0.0`
 * Copy from deploy folder to the package folder
- *     `Sitecore.Mvc.dll`
- *     `Sitecore.Kernell.dll`
+ * `Sitecore.Mvc.dll`
+ * `Sitecore.Kernell.dll`
 * Reference the files dlls and select copy Locals false
 * Copy Web.config from root web deploy folder to the solution folder
 * Delete global asax files
 * Create folders Controllers, Models, Views
-* Add Views\Web.config file which has MVC 5.1.0.0 and Razor 3.0.0.0 version
+* Add Views\Web.config file which has `MVC 5.1.0.0` and `Razor 3.0.0.0` version
 * Build and Publish project to `sitecore8.local IIS instance`
