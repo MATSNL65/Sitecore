@@ -40,10 +40,10 @@ Windows, IIS server, Mssql, Mongodb, Visual Studio
 * Create a new empty Web project with .Net Framework 4.5+
 * install from package manager console
 
-⋅⋅⋅ `Install-Package Microsoft.AspNet.Razor -Version 3.0.0.0`
+`Install-Package Microsoft.AspNet.Razor -Version 3.0.0.0`
+`Install-Package Microsoft.AspNet.Webpages -Version 3.0.0.0`
+`Install-Package Microsoft.AspNet.Mvc -Version 5.1.0.0`
 
-*     `Install-Package Microsoft.AspNet.Webpages -Version 3.0.0.0`
-*     `Install-Package Microsoft.AspNet.Mvc -Version 5.1.0.0`
 * Copy from deploy folder to the package folder
 *     `Sitecore.Mvc.dll`
 *     `Sitecore.Kernell.dll`
