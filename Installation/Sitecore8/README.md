@@ -47,4 +47,4 @@ Windows, IIS server, Mssql, Mongodb, Visual Studio
 * Copy web.config from web deploy folder to solution folder
 * Delete global asax files
 * Create folders Controllers, Models, Views
-* Build and Publich project to IIS instance
+* Build and Publish project to `sitecore8.local IIS instance`
