@@ -11,6 +11,7 @@ Windows, IIS server, Mssql, Mongodb, Visual Studio
 * Have a developer license.xml file
 * login and download 'ZIP archive of the Sitecore site root' from http://dev.sitecore.net
 * Unblock the zip file and extract the content
+* The content has the folders, Data, Databases and Website
 
 ### DB
 * Move the Sitecore DB files to a database folder 
@@ -25,7 +26,7 @@ Windows, IIS server, Mssql, Mongodb, Visual Studio
 * start robomongo and connect to localhost (optional)
     
 ### WEB DEPLOY
-* Copy web files to folder
+* Copy the web files to a web folder
 * Rename LiveMode.config.example to LiveMode.config
 * Update the connection string for ConnectionStrings.config
 * Copy Data folder to inside web folder
@@ -37,15 +38,15 @@ Windows, IIS server, Mssql, Mongodb, Visual Studio
 * Install Sitecore rocks
 * Connect Sitecore rocks from Visual studio to the DB
 * Create a new empty Web project with .Net Framework 4.5+
-* Copy from deploy folder to package folder
-*     `Sitecore.Mvc`
-*     `Sitecore.Kernell`
-* Reference the files dlls and select copy Locals false
 * install from package manager console
 *     `Install-Package Microsoft.AspNet.Razor -Version 3.0.0.0`
 *     `Install-Package Microsoft.AspNet.Webpages -Version 3.0.0.0`
 *     `Install-Package Microsoft.AspNet.Mvc -Version 5.1.0.0`
-* Copy Web.config from root web deploy folder to solution folder
+* Copy from deploy folder to the package folder
+*     `Sitecore.Mvc.dll`
+*     `Sitecore.Kernell.dll`
+* Reference the files dlls and select copy Locals false
+* Copy Web.config from root web deploy folder to the solution folder
 * Delete global asax files
 * Create folders Controllers, Models, Views
 * Add Views\Web.config file which has MVC 5.1.0.0 and Razor 3.0.0.0 version
