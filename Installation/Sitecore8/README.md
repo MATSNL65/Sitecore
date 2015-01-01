@@ -18,8 +18,8 @@ Windows, IIS server, Mssql, Mongodb, Visual Studio
 * Add a db sitecore user to have ownership of the DB's
 * Download and Install mongodb
 * Start mongodb from command line
-`cd "C:\Program Files\MongoDB 2.6 Standard\bin"`
-`mongod -dbpath "C:\databases\sitecore8"`
+* `cd "C:\Program Files\MongoDB 2.6 Standard\bin"`
+* `mongod -dbpath "C:\databases\sitecore8"`
 * Install robomongo (optional)
 * start robomongo and connect to localhost (optional)
     
