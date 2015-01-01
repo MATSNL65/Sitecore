@@ -1,28 +1,29 @@
 Sitecore 8 Installation
 ========
 
-PREREQUISITE
---------
+## Quick guide
+
+###  PREREQUISITE
 Windows, IIS server, Mssql, Mongodb, Visual Studio
 
-## DOWNLOAD
+### DOWNLOAD
 * Have a developer license.xml file
 * login and download 'ZIP archive of the Sitecore site root' from dev.sitecore.net
 * Unblock the zip file and extract the content
 
-## DB
+### DB
 * Move the Sitecore DB files to a database folder 
 * Ensure MSSQLSERVER has security rights for the DB files (right click, properties, add user permission) 
 * Attach the DB's to MSSQL
 * Add a db sitecore user to have ownership of the DB's
 * Download and Install mongodb
 * Start mongodb from command line
-⋅⋅⋅`cd "C:\Program Files\MongoDB 2.6 Standard\bin"`
-⋅⋅⋅`mongod -dbpath "C:\databases\sitecore8"`
+`cd "C:\Program Files\MongoDB 2.6 Standard\bin"`
+`mongod -dbpath "C:\databases\sitecore8"`
 * Install robomongo (optional)
 * start robomongo and connect to localhost (optional)
     
-## WEB DEPLOY
+### WEB DEPLOY
 * Copy web files to folder
 * Rename LiveMode.config.example to LiveMode.config
 * Update the connection string for ConnectionStrings.config
@@ -31,18 +32,18 @@ Windows, IIS server, Mssql, Mongodb, Visual Studio
 * Create IIS site for Sitecore8 with binding sitecore8.local
 * Add to host file 127.0.0.1 sitecore8.local
 
-## WEB DEVELOPMENT
+### WEB DEVELOPMENT
 * Install Sitecore rocks
 * Connect Sitecore rocks from Visual studio to the DB
 * Create a new empty Web project with .Net Framework 4.5+
 * Copy from deploy folder to package folder
-..*     Sitecore.Mvc
-..*     Sitecore.Kernell
+*     Sitecore.Mvc
+*     Sitecore.Kernell
 * Reference the files dlls and select copy Locals false
 * install from package manager console
-..*     Install-Package Microsoft.AspNet.Razor -Version 3.0.0
-..*     Install-Package Microsoft.AspNet.Webpages -Version 3.0.0
-..*     Install-Package Microsoft.AspNet.Mvc -Version 5.1.0
+*     Install-Package Microsoft.AspNet.Razor -Version 3.0.0
+*     Install-Package Microsoft.AspNet.Webpages -Version 3.0.0
+*     Install-Package Microsoft.AspNet.Mvc -Version 5.1.0
 * Copy web.config from web deploy folder to solution folder
 * Delete global asax files
 * Create folders Controllers, Models, Views
