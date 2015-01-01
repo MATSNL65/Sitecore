@@ -28,7 +28,7 @@ Windows, IIS server, Mssql, Mongodb, Visual Studio
 * Copy web files to folder
 * Rename LiveMode.config.example to LiveMode.config
 * Update the connection string for ConnectionStrings.config
-* Copy Data folder to inside web folder and rename to folder to data
+* Copy Data folder to inside web folder
 * Place the license.xml file inside data folder
 * Create IIS site for Sitecore8 with binding `sitecore8.local`
 * Add to host file `127.0.0.1 sitecore8.local`
