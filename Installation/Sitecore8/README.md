@@ -51,3 +51,4 @@ Windows, IIS server, Mssql, Mongodb, Visual Studio
 * Create folders Controllers, Models, Views
 * Add Views\Web.config file which has `MVC 5.1.0.0` and `Razor 3.0.0.0` version
 * Build and Publish project to `sitecore8.local IIS instance`
+* Type in browser: http://sitecore8.local and you should see your new Sitecore site
