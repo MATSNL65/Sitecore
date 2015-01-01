@@ -1,15 +1,18 @@
 Sitecore 8 Installation
 ========
 
--- PREREQUISITE --
+PREREQUISITE
+--------
 Windows, IIS server, Mssql, Mongodb, Visual Studio
 
 -- DOWNLOAD --
+--------
 Have a developer license.xml file
 login and download 'ZIP archive of the Sitecore site root' from dev.sitecore.net
 Unblock the zip file and extract the content
 
 -- DB --
+--------
 Move the Sitecore DB files to a database folder 
 Ensure MSSQLSERVER has security rights for the DB files (right click, properties, add user permission) 
 Attach the DB's to MSSQL
@@ -22,6 +25,7 @@ Install robomongo (optional)
 start robomongo and connect to localhost (optional)
     
 -- WEB DEPLOY --
+--------
 Copy web files to folder
 Rename LiveMode.config.example to LiveMode.config
 Update the connection string for ConnectionStrings.config
@@ -31,6 +35,7 @@ Create IIS site for Sitecore8 with binding sitecore8.local
 Add to host file 127.0.0.1 sitecore8.local
 
 -- WEB DEVELOPMENT --
+--------
 Install Sitecore rocks
 Connect Sitecore rocks from Visual studio to the DB
 Create a new empty Web project with .Net Framework 4.5+
