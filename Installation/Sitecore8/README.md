@@ -38,14 +38,15 @@ Windows, IIS server, Mssql, Mongodb, Visual Studio
 * Connect Sitecore rocks from Visual studio to the DB
 * Create a new empty Web project with .Net Framework 4.5+
 * Copy from deploy folder to package folder
-*     Sitecore.Mvc
-*     Sitecore.Kernell
+*     `Sitecore.Mvc`
+*     `Sitecore.Kernell`
 * Reference the files dlls and select copy Locals false
 * install from package manager console
 *     `Install-Package Microsoft.AspNet.Razor -Version 3.0.0.0`
 *     `Install-Package Microsoft.AspNet.Webpages -Version 3.0.0.0`
 *     `Install-Package Microsoft.AspNet.Mvc -Version 5.1.0.0`
-* Copy web.config from web deploy folder to solution folder
+* Copy Web.config from root web deploy folder to solution folder
 * Delete global asax files
 * Create folders Controllers, Models, Views
+* Add Views\Web.config file which has MVC 5.1.0.0 and Razor 3.0.0.0 version
 * Build and Publish project to `sitecore8.local IIS instance`
