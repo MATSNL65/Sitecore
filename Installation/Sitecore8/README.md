@@ -1,7 +1,7 @@
 Sitecore 8 Installation
 ========
 
-## Quick guide
+## Manual installation notes
 
 ###  PREREQUISITE
 Windows, IIS server, Mssql, Mongodb, Visual Studio
