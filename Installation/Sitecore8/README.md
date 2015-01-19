@@ -4,12 +4,18 @@ Sitecore 8 Installation
 ## Manual installation notes
 All steps are manual in this guide, no Sitecore Instance Manager (SIM) or MSI installation
 
+Quick notes. Take the steps as guide lines. The purpose is:
+* Everything manually, we know whats happening
+* Separate deploy and development
+* Don't add all not needed files when choosing new solutions, thus new empty solution and add what we want
+* Align Sitecore .Net version and .Net from new solution version with Install-package commands 
+
 ###  PREREQUISITE
 Windows, IIS server, Mssql, Mongodb, Visual Studio
 
 ### DOWNLOAD
 * Have a developer license.xml file
-* login and download 'ZIP archive of the Sitecore site root' from http://dev.sitecore.net
+* login and download 'ZIP archive of the Sitecore site root' from http://dev.sitecore.net (or other source)
 * Unblock the zip file and extract the content
 * The content has the folders, Data, Databases and Website
 
