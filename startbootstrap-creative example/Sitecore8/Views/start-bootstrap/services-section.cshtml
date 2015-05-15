@@ -1,0 +1,53 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Data.Items
+@using Sitecore8.Models
+@model RenderingModel	
+		   
+@{
+	Item linkItem = Model.Rendering.Item
+		.GetDataSourceTargetItemByFieldName("navigation item");
+	var link = linkItem["link"];
+}
+
+<section id="@link">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading">
+					@Html.Sitecore().Field("title", Model.Rendering.Item)
+				</h2>
+				<hr class="primary">
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+
+			@foreach (Item serviceItem in Model.Rendering.Item.Children)
+			{
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="service-box">
+						<i class="fa fa-4x fa-@serviceItem["icon"] wow bounceIn text-primary"></i>
+					
+						@if (@Sitecore.Context.PageMode.IsPageEditorEditing)
+						{
+							<div>
+								@Html.Sitecore().Field("icon", serviceItem)
+							</div>
+						}
+
+						<h3>
+							@Html.Sitecore().Field("title", serviceItem)
+						</h3>
+						<p class="text-muted">
+							@Html.Sitecore().Field("teaser", serviceItem)
+						</p>
+					</div>
+				</div>
+			}
+		</div>
+	</div>
+</section>

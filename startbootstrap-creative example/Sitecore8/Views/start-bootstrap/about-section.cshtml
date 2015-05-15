@@ -1,0 +1,28 @@
+﻿@using Sitecore.Data.Items
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore8.Models
+@model RenderingModel	
+		   
+@{
+	Item linkItem = Model.Rendering.Item
+		.GetDataSourceTargetItemByFieldName("navigation item");		
+	var link = linkItem["link"];
+}
+ 		
+<section class="bg-primary" id="@link">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 text-center">
+				<h2 class="section-heading">
+					@Html.Sitecore().Field("title", Model.Rendering.Item)
+				</h2>
+				<hr class="light">
+				<p class="text-faded">
+					@Html.Sitecore().Field("teaser", Model.Rendering.Item)
+				</p>
+				@Html.Sitecore().Field("link", Model.Rendering.Item)
+			</div>
+		</div>
+	</div>
+</section>
