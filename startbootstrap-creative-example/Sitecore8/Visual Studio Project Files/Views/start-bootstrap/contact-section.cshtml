@@ -14,17 +14,17 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 text-center">
-				<h2 class="section-heading">@Html.Sitecore().Field("title", Model.Rendering.Item)</h2>
+				<h2 class="section-heading">@Html.Sitecore().Field("title")</h2>
 				<hr class="primary">
-				<p>@Html.Sitecore().Field("teaser", Model.Rendering.Item)</p>
+				<p>@Html.Sitecore().Field("teaser")</p>
 			</div>
 			<div class="col-lg-4 col-lg-offset-2 text-center">
 				<i class="fa fa-phone fa-3x wow bounceIn"></i>
-				<p>@Html.Sitecore().Field("phone", Model.Rendering.Item)</p>
+				<p>@Html.Sitecore().Field("phone")</p>
 			</div>
 			<div class="col-lg-4 text-center">
 				<i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-				<p><a href='mailto:@(Model.Rendering.Item["email"])'>@Html.Sitecore().Field("email", Model.Rendering.Item)</a></p>
+				<p><a href='mailto:@(Model.Rendering.Item["email"])'>@Html.Sitecore().Field("email")</a></p>
 			</div>
 		</div>
 	</div>
