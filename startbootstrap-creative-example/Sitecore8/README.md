@@ -8,3 +8,4 @@ I will give an example of refactoring a static responsive website into an existi
 # Blog
 
 The walk-through can be read at my blog website
+https://kunuk.wordpress.com/2015/05/17/sitecore-mvc-walk-through-of-refactoring-a-static-website/
