@@ -1,8 +1,6 @@
 ﻿@using Sitecore.Mvc
 @using Sitecore.Mvc.Presentation
 @model RenderingModel
-			   
-@Model.PageItem
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,7 +38,7 @@
 </head>
 
 <body id="page-top">
-	
+
 @Html.Sitecore().ViewRendering("/Views/start-bootstrap/navigation.cshtml",
 	new { DataSource = "/sitecore/content/Home/start-bootstrap/data sources/navigation" })
 
